@@ -1,0 +1,3 @@
+Laboratory 1; B; "The main function is too long, please split it into several functions."
+Laboratory 1; A; "Good job."
+Laboratory 2; C; "The project is not compiling."
