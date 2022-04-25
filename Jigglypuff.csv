@@ -7,3 +7,5 @@ hello_world, A
 connect4, B
 zoo, B
 zoo, A
+dynamic_array, C
+dynamic_array, A
