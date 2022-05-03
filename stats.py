@@ -14,7 +14,7 @@ def make_stats():
     # "LOL2D": [0,0,0],
     "dynamic_array": [0,0,0],
     "linked_list": [0,0,0],
-    "generic_ds": [0,0,0],
+    "generics": [0,0,0],
     # "hash_table": [0,0,0],
     # "btree": [0,0,0],
     # "graph": [0,0,0],
