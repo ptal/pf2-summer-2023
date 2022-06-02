@@ -18,3 +18,4 @@ generics, A
 hash_table, C
 hash_table, A
 btree, B
+btree, A
