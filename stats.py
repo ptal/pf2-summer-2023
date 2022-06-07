@@ -10,7 +10,7 @@ def make_stats():
     "zoo": [0,0,0],
     "pokedeck": [0,0,0],
     "rpg": [0,0,0],
-    # "rpg_ii": [0,0,0],
+    "rpg2": [0,0,0],
     # "LOL2D": [0,0,0],
     "dynamic_array": [0,0,0],
     "linked_list": [0,0,0],
