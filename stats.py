@@ -21,6 +21,7 @@ def make_stats():
 
 mandatory_labs = ["hacking_in_bash", "hello_world", "connect4", "zoo", "pokedeck", "dynamic_array", "linked_list", "generics"]
 
+num_reviews = 0
 stats = make_stats()
 students = 0
 successful_students = 0
@@ -32,6 +33,7 @@ for file in files:
       csv_reader = csv.reader(csv_file, delimiter=',')
       student_stat = make_stats()
       for row in csv_reader:
+        num_reviews = num_reviews + 1
         if "A" in row[1]:
           student_stat[row[0]][0] = student_stat[row[0]][0] + 1
         if "B" in row[1]:
@@ -53,6 +55,8 @@ for file in files:
           stats[x][2] = stats[x][2] + 1
 
 print("There are ", successful_students, " successful students.")
+
+print("There are ", num_reviews, " reviews.")
 
 import matplotlib.pyplot as plt
 
