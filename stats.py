@@ -6,20 +6,15 @@ def make_stats():
   return {
     "hacking_in_bash": [0,0,0],
     "hello_world": [0,0,0],
-    "connect4": [0,0,0],
-    "zoo": [0,0,0],
+    "the_card_game": [0,0,0],
+    "space_exploration": [0,0,0],
     "pokedeck": [0,0,0],
-    "rpg": [0,0,0],
-    "rpg2": [0,0,0],
-    # "LOL2D": [0,0,0],
     "dynamic_array": [0,0,0],
     "linked_list": [0,0,0],
     "generics": [0,0,0],
     "hash_table": [0,0,0],
     "btree": [0,0,0]
   }
-
-mandatory_labs = ["hacking_in_bash", "hello_world", "connect4", "zoo", "pokedeck", "dynamic_array", "linked_list", "generics"]
 
 num_reviews = 0
 stats = make_stats()
@@ -33,6 +28,12 @@ for file in files:
       csv_reader = csv.reader(csv_file, delimiter=',')
       student_stat = make_stats()
       for row in csv_reader:
+        if row[0] == "connect4":
+          row[0] = "the_card_game"
+        elif row[0] == "zoo":
+          row[0] = "space_exploration"
+        elif row[0] == "rpg":
+          continue
         num_reviews = num_reviews + 1
         if "A" in row[1]:
           student_stat[row[0]][0] = student_stat[row[0]][0] + 1
@@ -40,12 +41,6 @@ for file in files:
           student_stat[row[0]][1] = student_stat[row[0]][1] + 1
         if "C" in row[1]:
           student_stat[row[0]][2] = student_stat[row[0]][2] + 1
-      successful = True
-      for m in mandatory_labs:
-        if student_stat[m][0] == 0:
-          successful = False
-      if successful:
-        successful_students = successful_students + 1
       for x in student_stat:
         if student_stat[x][0] > 0:
           stats[x][0] = stats[x][0] + 1
@@ -53,8 +48,6 @@ for file in files:
           stats[x][1] = stats[x][1] + 1
         elif student_stat[x][2] > 0:
           stats[x][2] = stats[x][2] + 1
-
-print("There are ", successful_students, " successful students.")
 
 print("There are ", num_reviews, " reviews.")
 
