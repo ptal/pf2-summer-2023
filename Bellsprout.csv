@@ -11,6 +11,7 @@ dynamic_array, A
 linked_list, A
 the_card_game, A
 generics, B
+binary_tree, A
 pokedeck, C
 generics, C
 hash_table, B
