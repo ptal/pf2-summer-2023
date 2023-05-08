@@ -14,3 +14,5 @@ generics, A
 binary_tree, A
 pokedeck, C
 hash_table, B
+pokedeck, A
+hash_table, A
