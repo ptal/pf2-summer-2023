@@ -16,3 +16,5 @@ generics, B
 pokedeck, A
 linked_list, B
 hash_table, B
+generics, A
+hash_table, A
