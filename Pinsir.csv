@@ -19,3 +19,5 @@ hash_table, B
 space_exploration, A
 linked_list, B
 binary_tree, B
+generics, A
+hash_table, A
