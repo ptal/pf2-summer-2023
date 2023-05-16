@@ -12,4 +12,7 @@ dynamic_array, A
 space_exploration, B
 linked_list, B
 the_card_game, B
+space_exploration, B
+linked_list, A
+binary_tree, A
 the_card_game, A
