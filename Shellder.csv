@@ -8,3 +8,5 @@ hello_world, A
 the_card_game, A
 dynamic_array, A
 linked_list, B
+generics, C
+pokedeck, C
