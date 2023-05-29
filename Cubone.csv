@@ -11,3 +11,5 @@ space_exploration, A
 dynamic_array, A
 linked_list, B
 hash_table, C
+linked_list, B
+binary_tree, C
