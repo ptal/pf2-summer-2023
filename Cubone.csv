@@ -12,3 +12,5 @@ dynamic_array, A
 linked_list, B
 hash_table, C
 generics, B
+linked_list, B
+binary_tree, C
