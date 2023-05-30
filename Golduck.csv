@@ -16,3 +16,6 @@ generics, C
 pokedeck, B
 linked_list, A
 binary_tree, A
+generics, A
+pokedeck, A
+hash_table, A

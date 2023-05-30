@@ -17,3 +17,5 @@ binary_tree, A
 generics, C
 hash_table, C
 linked_list, A
+generics, A
+hash_table, C
